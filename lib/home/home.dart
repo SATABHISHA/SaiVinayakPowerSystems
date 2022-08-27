@@ -20,9 +20,18 @@ class Home extends StatelessWidget {
                   DefaultTextStyle(style: TextStyle(
                     fontSize: 40.0,
                     color: Colors.white,
-                  ),child: Center(child: AnimatedTextKit(totalRepeatCount: 1,animatedTexts: [TyperAnimatedText('Sai Vinayak Power Systems')],)))
+                  ),child: Center(child: AnimatedTextKit(totalRepeatCount: 1,animatedTexts: [TyperAnimatedText('Sai Vinayak Power Systems')],))),
                 ],
               ),
+            ),
+
+            Column(
+              crossAxisAlignment: CrossAxisAlignment.stretch,
+              children: [
+                Container(
+
+                )
+              ],
             )
           ],
         ),
