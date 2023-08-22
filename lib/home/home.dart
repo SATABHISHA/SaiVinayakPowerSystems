@@ -156,7 +156,6 @@ class CustomImageSlider extends StatelessWidget {
             ),
           ),
         ),
-
         Container(
           margin: EdgeInsets.all(6.0),
           decoration: BoxDecoration(
