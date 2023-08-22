@@ -44,7 +44,6 @@ class Home extends StatelessWidget {
                 ),
 
                 // CustomImageSlider(),
-
                 SizedBox(height: 30,),
                 Padding(
                   padding: EdgeInsets.fromLTRB(20, 0, 0, 20),
