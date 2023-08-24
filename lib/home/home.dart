@@ -45,33 +45,38 @@ class Home extends StatelessWidget {
 
                 // CustomImageSlider(),
                 SizedBox(height: 30,),
-                Padding(
-                  padding: EdgeInsets.fromLTRB(20, 0, 0, 20),
-                  child: Container(
-                    width: 400,
-                    // height: 300,
-                    decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(10),
-                        color: Colors.white,
-                      boxShadow: [
-                        BoxShadow(
-                          color: Color.fromRGBO(217, 215, 215, 1.0),
-                          blurRadius: 15.0,
-                          spreadRadius: 2.0,
-                          offset: Offset(0.0, 0.0),
-                        )
-                      ],),
-                    child: Padding(
-                      padding: const EdgeInsets.all(8.0),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          Text('Our Products', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
-                          CustomImageSlider(),
-                        ],
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(20, 0, 0, 20),
+                      child: Container(
+                        width: 400,
+                        // height: 300,
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(10),
+                            color: Colors.white,
+                          boxShadow: [
+                            BoxShadow(
+                              color: Color.fromRGBO(217, 215, 215, 1.0),
+                              blurRadius: 15.0,
+                              spreadRadius: 2.0,
+                              offset: Offset(0.0, 0.0),
+                            )
+                          ],),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Our Products', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
+                              CustomImageSlider(),
+                            ],
+                          ),
+                        ),
                       ),
                     ),
-                  ),
+                  ],
                 ),
 
                 Column(
