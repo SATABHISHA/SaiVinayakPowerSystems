@@ -42,7 +42,6 @@ class Home extends StatelessWidget {
                     ],
                   ),
                 ),
-
                 // CustomImageSlider(),
                 SizedBox(height: 30,),
                 Row(
@@ -76,6 +75,19 @@ class Home extends StatelessWidget {
                         ),
                       ),
                     ),
+                    Container(
+                      width: 100,
+                      height: 200,
+                      decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                      child: Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: [
+                          ListView(
+
+                          )
+                        ],
+                      ),
+                    )
                   ],
                 ),
 
