@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:sai_vinayak_power_systems/home/machinery_list_tile.dart';
 import '../widgets/widget_home/CustomCarouselSlider.dart';
 
 class Home extends StatelessWidget {
@@ -46,6 +47,7 @@ class Home extends StatelessWidget {
                 SizedBox(height: 30,),
                 Row(
                   crossAxisAlignment: CrossAxisAlignment.start,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
                     Padding(
                       padding: EdgeInsets.fromLTRB(20, 0, 0, 20),
@@ -88,9 +90,7 @@ class Home extends StatelessWidget {
                             ListView(
                               shrinkWrap: true,
                               children: [
-                                ListTile(
-
-                                ),
+                                MachineryListTile(row_color: Colors.blue, txt_color: Colors.black, txt_font_size: 17, txt_slno: 'Sl No', txt_desc: 'Description', txt_qty: 'Qty'),
                               ],
                             )
                           ],
