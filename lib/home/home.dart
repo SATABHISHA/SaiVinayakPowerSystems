@@ -36,8 +36,8 @@ class _HomeState extends State<Home> {
                   Colors.black,
                   Colors.black12,
                   // Colors.white38,
-                  Colors.black54,
-                  Colors.black12,
+                  // Colors.black54,
+                  // Colors.black12,
                   Colors.black,
 
                 ],
@@ -46,9 +46,12 @@ class _HomeState extends State<Home> {
           // color: Color.fromRGBO(2, 2, 2, 0.3),
           child: ListView(
             shrinkWrap: true,
+            // scrollDirection: Axis.vertical,
             children: [
               Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
+                // mainAxisAlignment: MainAxisAlignment.center,
+                // mainAxisSize: MainAxisSize.min,
                 children: [
                   ClipPath(
                     clipper: BezierClipper(),
@@ -139,6 +142,100 @@ class _HomeState extends State<Home> {
                     ),
                   ),
                   // CustomImageSlider(),
+                  SizedBox(height: 30,),
+                  //---who we are, code starts
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Container(
+                      width: double.infinity,
+                      // height: 250,
+                      // decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        // color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromRGBO(217, 215, 215, 1.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 2.0,
+                            offset: Offset(0.0, 0.0),
+                          )
+                        ],),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Center(child: Text('Who We Are', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 25, fontWeight: FontWeight.w700))),
+                            SizedBox(height: 10,),
+                            Flexible(
+                              fit: FlexFit.loose,
+                              child: Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Text('      We have leased three factories in Kolkata with one 4000 sq. ft. covered area Fabrication shop and others are 2000 sq. ft. (each)covered area Assembly shop with assorted machineries for panels.\nWe are associated with M/s Automation Solutions and Services – an ISO 9001 : 2015 certified company to provide the additional services of Automation / Commissioning assistance at Field / Retrofitting ( Modification of Feeders of Panels ).',
+                                    style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  //---who we are, code ends
+                  Align(
+                    alignment: Alignment.centerRight,
+                    child: Padding(
+                      padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
+                      child: InkWell(onTap: () {
+                        print('Clicked');
+                      },child: Text('See more...',style: TextStyle(color: Color.fromRGBO(
+                          248, 248, 248, 1.0), fontSize: 22, fontWeight: FontWeight.w500))),
+                    ),
+                  ),
+                  SizedBox(height: 40,),
+                  //---why us, code starts
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
+                    child: Container(
+                      width: double.infinity,
+                      // height: 250,
+                      // decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        // color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromRGBO(217, 215, 215, 1.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 2.0,
+                            offset: Offset(0.0, 0.0),
+                          )
+                        ],),
+                      child: const Padding(
+                        padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Center(child: Text('Why Us', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 25, fontWeight: FontWeight.w700))),
+                            SizedBox(height: 10,),
+                            Flexible(
+                              fit: FlexFit.loose,
+                              child: Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Text('      We have highly professional skilled Autocad trained team for Drawing and Designing.\nFollowing are the key benifits of choosing us:\n1. Quality\n2. On Time Delivery\n3. Post-delivery support\n4. Documentation on Delivery (Provides the Original Bills and warranty papers for all the Hardware used in the Panel)',
+                                    style: TextStyle(color: Color.fromRGBO(
+                                        23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                              ),
+                            )
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  //---why us, code ends
+
                   SizedBox(height: 30,),
                   Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
