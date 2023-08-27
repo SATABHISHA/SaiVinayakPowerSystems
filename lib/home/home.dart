@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+import 'package:sai_vinayak_power_systems/home/client_list_tile.dart';
 import 'package:sai_vinayak_power_systems/home/machinery_list_tile.dart';
 import '../widgets/widget_home/CustomCarouselSlider.dart';
 
@@ -90,7 +91,7 @@ class _HomeState extends State<Home> {
 
                     //---machineries list in listView, code starts
                     Padding(
-                      padding: EdgeInsets.fromLTRB(0, 0, 20, 20),
+                      padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
                       child: Container(
                         width: 400,
                         height: 300,
@@ -146,8 +147,63 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                       ),
-                    )
+                    ),
                     //---machineries list in listView, code ends
+
+                    //---client list in listView, code starts
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 20, 20),
+                      child: Container(
+                        width: 300,
+                        height: 300,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(8, 15, 8, 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('Our Clients', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
+                              SizedBox(height: 10,),
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                  child: Column(
+                                    children: [
+                                      ClientListTile(row_color: Colors.blue, txt_color: Colors.black, txt_font_size: 17, txt_slno: 'Sl. No.', txt_client_name: 'Client Name', weight: FontWeight.bold,),
+                                      Expanded(
+                                        child: ListView(
+                                          shrinkWrap: true,
+                                          children: [
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '1', txt_client_name: 'HMB Ispat Pvt. Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '2', txt_client_name: 'Mani Square Hospitality Pvt. Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '3', txt_client_name: 'Magus Bengal Estates LLP', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '4', txt_client_name: 'Siom Realty Pvt. Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '5', txt_client_name: 'BNSS Engineering Pvt. Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '6', txt_client_name: 'SS Engineering', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '7', txt_client_name: 'ITC Limited. Unit - Tribeni', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '8', txt_client_name: 'Amiya Steel Pvt. Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '9', txt_client_name: 'Bengal NRI Complex Limited', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '10', txt_client_name: 'Grap Realty Private Limited', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '11', txt_client_name: 'Amity University', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '12', txt_client_name: 'Haldiram Bhujiwala Ltd.', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '13', txt_client_name: 'Narayan Hospital', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '14', txt_client_name: 'Overon Infrustructure', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '15', txt_client_name: 'Shyam Group', weight: FontWeight.normal,),
+                                            ClientListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '16', txt_client_name: 'Tenova India Pvt. Ltd.', weight: FontWeight.normal,),
+
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
+                        ),
+                      ),
+                    )
+                    //---client list in listView, code ends
                   ],
                 ),
 
