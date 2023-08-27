@@ -34,7 +34,7 @@ class _HomeState extends State<Home> {
                   Colors.yellow,
                   Colors.redAccent,*/
                   Colors.black,
-                  Colors.black12,
+                  Color.fromRGBO(215, 239, 172, 1.0),
                   // Colors.white38,
                   // Colors.black54,
                   // Colors.black12,
