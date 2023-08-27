@@ -5,12 +5,18 @@ import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:sai_vinayak_power_systems/home/machinery_list_tile.dart';
 import '../widgets/widget_home/CustomCarouselSlider.dart';
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   // const Home({Key? key}) : super(key: key);
   static String id = 'Home';
 
   @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  @override
   Widget build(BuildContext context) {
+    List<Widget> listMachineries = [];
     return Material(
       child: Scaffold(
         backgroundColor: Color.fromRGBO(204, 234, 243, 0.9686274509803922),
@@ -49,6 +55,8 @@ class Home extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.start,
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
+
+                    //---product list, code starts
                     Padding(
                       padding: EdgeInsets.fromLTRB(20, 0, 0, 20),
                       child: Container(
@@ -77,26 +85,69 @@ class Home extends StatelessWidget {
                         ),
                       ),
                     ),
-                    Container(
-                      width: 400,
-                      height: 200,
-                      decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text('List of Machineries', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
-                            ListView(
-                              shrinkWrap: true,
-                              children: [
-                                MachineryListTile(row_color: Colors.blue, txt_color: Colors.black, txt_font_size: 17, txt_slno: 'Sl No', txt_desc: 'Description', txt_qty: 'Qty'),
-                              ],
-                            )
-                          ],
+                    //---product list, code ends
+
+
+                    //---machineries list in listView, code starts
+                    Padding(
+                      padding: EdgeInsets.fromLTRB(0, 0, 20, 20),
+                      child: Container(
+                        width: 400,
+                        height: 300,
+                        decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                        child: Padding(
+                          padding: EdgeInsets.fromLTRB(8, 15, 8, 8),
+                          child: Column(
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: [
+                              Text('List of Machineries', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
+                              SizedBox(height: 10,),
+                              Expanded(
+                                child: Padding(
+                                  padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                  child: Column(
+                                    children: [
+                                      MachineryListTile(row_color: Colors.blue, txt_color: Colors.black, txt_font_size: 17, txt_slno: 'Sl. No.', txt_desc: 'Description', txt_qty: 'Qty', weight: FontWeight.bold,),
+                                      Expanded(
+                                        child: ListView(
+                                          shrinkWrap: true,
+                                          children: [
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '1', txt_desc: 'Hydraulic shearing machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '2', txt_desc: 'Auto Hydraulic bending machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '3', txt_desc: 'Hydraulic press machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '4', txt_desc: 'Piller drill', txt_qty: '4 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '5', txt_desc: 'Hand Drill Machine', txt_qty: '10 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '6', txt_desc: 'Ball Press', txt_qty: '3 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '7', txt_desc: 'Welding machine', txt_qty: '5 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '8', txt_desc: 'Hand Grinding Machine', txt_qty: '10 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '9', txt_desc: 'Chak-saw machine', txt_qty: '4 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '10', txt_desc: 'Sander Machine', txt_qty: '3 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '11', txt_desc: 'Digital Paint Coat Gauge Elcometer', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '12', txt_desc: 'Manual Hydraulic Busbar Bending Machine', txt_qty: '2 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '13', txt_desc: 'Hydraulic Busbar Bending Machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '14', txt_desc: 'Hydraulic Busbar Cutting &amp; Punching Machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '15', txt_desc: 'Wire Crimping Machine', txt_qty: '10 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '16', txt_desc: 'Power Wire Cutter', txt_qty: '10 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '17', txt_desc: 'Ferrul Printing Machine', txt_qty: '3 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '18', txt_desc: 'Seconday Current Injection Kit', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '19', txt_desc: 'Continuity Tester', txt_qty: '10 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '20', txt_desc: 'Tong Tester', txt_qty: '2 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '21', txt_desc: '1000 V megger', txt_qty: '2 Nos.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '22', txt_desc: '5 KV HV Testing Machine', txt_qty: '1 No.', weight: FontWeight.normal,),
+                                            MachineryListTile(row_color: Colors.white, txt_color: Colors.black, txt_font_size: 14, txt_slno: '23', txt_desc: 'Miscellaneous Tools', txt_qty: '1 Lot', weight: FontWeight.normal,),
+                                          ],
+                                        ),
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              )
+                            ],
+                          ),
                         ),
                       ),
                     )
+                    //---machineries list in listView, code ends
                   ],
                 ),
 
