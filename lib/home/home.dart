@@ -76,27 +76,36 @@ class Home extends StatelessWidget {
                       ),
                     ),
                     Container(
-                      width: 100,
+                      width: 400,
                       height: 200,
                       decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
-                      child: Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        children: [
-                          ListView(
+                      child: Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Text('List of Machineries', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
+                            ListView(
+                              shrinkWrap: true,
+                              children: [
+                                ListTile(
 
-                          )
-                        ],
+                                ),
+                              ],
+                            )
+                          ],
+                        ),
                       ),
                     )
                   ],
                 ),
 
-                Column(
+                /*Column(
                   crossAxisAlignment: CrossAxisAlignment.stretch,
                   children: [
                     Container()
                   ],
-                )
+                )*/
               ],
             )
           ],
