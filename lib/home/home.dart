@@ -133,7 +133,11 @@ class _HomeState extends State<Home> {
                                         ],
                                       )),
                                   SizedBox(width: 10,),
-                                  Text('2/2 L.N Motilal Road, Kolkata 700061', style: TextStyle(color: Colors.white, fontSize: 13),)
+                                  Text('2/2 L.N Motilal Road, Kolkata 700061', style: TextStyle(color: Colors.white, fontSize: 13),),
+                                  SizedBox(height: 20,),
+                                  Image.asset('images/svpslogo.png',
+                                    width: 120,
+                                    height: 120,),
                                 ],
                               ),
                             ),
