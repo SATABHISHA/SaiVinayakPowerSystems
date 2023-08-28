@@ -3,6 +3,7 @@ import 'package:animated_text_kit/animated_text_kit.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:sai_vinayak_power_systems/config/BezierClipper.dart';
+import 'package:sai_vinayak_power_systems/home/about_us.dart';
 import 'package:sai_vinayak_power_systems/home/client_list_tile.dart';
 import 'package:sai_vinayak_power_systems/home/machinery_list_tile.dart';
 import '../widgets/widget_home/CustomCarouselSlider.dart';
@@ -189,6 +190,10 @@ class _HomeState extends State<Home> {
                       padding: EdgeInsets.fromLTRB(0, 10, 20, 0),
                       child: InkWell(onTap: () {
                         print('Clicked');
+
+                        showDialog(context: context, builder: (BuildContext context) {
+                          return AboutUs();
+                        });
                       },child: Text('See more...',style: TextStyle(color: Color.fromRGBO(
                           248, 248, 248, 1.0), fontSize: 22, fontWeight: FontWeight.w500))),
                     ),
