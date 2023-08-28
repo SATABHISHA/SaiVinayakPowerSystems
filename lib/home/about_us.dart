@@ -81,6 +81,8 @@ class _AboutUsState extends State<AboutUs> {
                       children: [
                         Center(child: Text('Details of our Company Founders', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 25, fontWeight: FontWeight.w700))),
                         SizedBox(height: 10,),
+
+                        //----sutapa details, code starts--
                         Flexible(
                           fit: FlexFit.loose,
                           child: Padding(
@@ -133,6 +135,74 @@ class _AboutUsState extends State<AboutUs> {
                                     23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
                           ),
                         ),
+
+                        SizedBox(height: 40,),
+                        //----sutapa details, code ends--
+
+                        //----tarun details, code starts--
+                        Flexible(
+                          fit: FlexFit.loose,
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                            child: Text('2. Chief Technical (CTO) and Chief marketing officer(CMO): Mr. Tarun Roy',
+                                style: TextStyle(color: Color.fromRGBO(
+                                    23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                          ),
+                        ),
+                        Row(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          children: [
+                            Flexible(
+                              fit: FlexFit.loose,
+                              child: Padding(
+                                padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                                child: Text('Qualification: ',
+                                    style: TextStyle(color: Color.fromRGBO(
+                                        23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                              ),
+                            ),
+
+                            Flexible(
+                              fit: FlexFit.loose,
+                              child: Padding(
+                                padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                child: Text('Electrical Engineer',
+                                    style: TextStyle(color: Color.fromRGBO(
+                                        23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Flexible(
+                          fit: FlexFit.loose,
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text('Work Experience:',
+                                style: TextStyle(color: Color.fromRGBO(
+                                    23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                          ),
+                        ),
+
+                        Flexible(
+                          fit: FlexFit.loose,
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text(AboutUsConstants.work_exp_txt_tarun,
+                                style: TextStyle(color: Color.fromRGBO(
+                                    23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                          ),
+                        ),
+                        SizedBox(height: 15,),
+                        Flexible(
+                          fit: FlexFit.loose,
+                          child: Padding(
+                            padding: EdgeInsets.fromLTRB(30, 0, 0, 0),
+                            child: Text('He is a well-known name in all the Switchgear companies like Schneider, ABB, L&T , Siemens, Legrand – etc, PAN India basis',
+                                style: TextStyle(color: Color.fromRGBO(
+                                    23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                          ),
+                        ),
+                        //----tarun details, code ends--
                       ],
                     ),
                   ),
