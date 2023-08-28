@@ -212,7 +212,7 @@ class _HomeState extends State<Home> {
                             offset: Offset(0.0, 0.0),
                           )
                         ],),
-                      child: const Padding(
+                      child: Padding(
                         padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
                         child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
