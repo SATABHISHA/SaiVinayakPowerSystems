@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "191308332361",
+    "project_id": "saivinayakpowersystem",
+    "storage_bucket": "saivinayakpowersystem.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191308332361:android:87904bc0d3e22f3f762e98",
+        "android_client_info": {
+          "package_name": "org.saivinayak.power.systems.sai_vinayak_power_systems"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191308332361-rga0g4trm55fm23qcj0i2biq1ajvnf0s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPEH3scAMYQPNTJi8hNPPbQ6B6QEzJYGY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "191308332361-rga0g4trm55fm23qcj0i2biq1ajvnf0s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

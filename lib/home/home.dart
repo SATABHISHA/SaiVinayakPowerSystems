@@ -1,11 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:animated_text_kit/animated_text_kit.dart';
-import 'package:carousel_slider/carousel_slider.dart';
-import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
+// import 'package:carousel_slider/carousel_slider.dart';
+// import 'package:flutter_image_slideshow/flutter_image_slideshow.dart';
 import 'package:sai_vinayak_power_systems/config/BezierClipper.dart';
 import 'package:sai_vinayak_power_systems/home/about_us.dart';
 import 'package:sai_vinayak_power_systems/home/client_list_tile.dart';
 import 'package:sai_vinayak_power_systems/home/machinery_list_tile.dart';
+import 'package:sai_vinayak_power_systems/widgets/widget_home/CustomImageSlider.dart';
 import '../widgets/widget_home/CustomCarouselSlider.dart';
 
 class Home extends StatefulWidget {
@@ -271,11 +272,12 @@ class _HomeState extends State<Home> {
                               )
                             ],),
                           child: Padding(
-                            padding: const EdgeInsets.all(8.0),
+                            padding: EdgeInsets.fromLTRB(8, 5, 8, 8),
                             child: Column(
                               crossAxisAlignment: CrossAxisAlignment.start,
                               children: [
                                 Text('Our Products', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 16, fontWeight: FontWeight.w700)),
+                                // CustomImageCarouselSlider(),
                                 CustomImageSlider(),
                               ],
                             ),
@@ -743,6 +745,7 @@ class _HomeState extends State<Home> {
                           crossAxisAlignment: CrossAxisAlignment.center,
                           children: [
                             Text('Our Products', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 20, fontWeight: FontWeight.w700)),
+                            // CustomImageCarouselSlider(),
                             CustomImageSlider(),
                           ],
                         ),

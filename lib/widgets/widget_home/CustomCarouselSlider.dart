@@ -5,16 +5,16 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
-class CustomImageSlider extends StatefulWidget {
-  const CustomImageSlider({
+class CustomImageCarouselSlider extends StatefulWidget {
+  const CustomImageCarouselSlider({
     super.key,
   });
 
   @override
-  State<CustomImageSlider> createState() => _CustomImageSliderState();
+  State<CustomImageCarouselSlider> createState() => _CustomImageCarouselSliderState();
 }
 
-class _CustomImageSliderState extends State<CustomImageSlider> {
+class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
   int _currentIndex = 0;
   @override
   Widget build(BuildContext context) {
