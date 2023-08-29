@@ -425,6 +425,88 @@ class _HomeState extends State<Home> {
                     ],
                   ),
 
+                  SizedBox(height: 20,),
+                  //---achievments, code starts
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 30),
+                    child: Container(
+                      width: double.infinity,
+                      // height: 250,
+                      // decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        // color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromRGBO(217, 215, 215, 1.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 2.0,
+                            offset: Offset(0.0, 0.0),
+                          )
+                        ],),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Center(child: Text('Our Achievment(s)', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 25, fontWeight: FontWeight.w700))),
+                            SizedBox(height: 10,),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                    child: Text('Client HMB Ispat: ',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                                  ),
+                                ),
+
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    child: Text('Certificate of Excellence in quality and on time delivery',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                    child: Text('Client BNSS: ',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                                  ),
+                                ),
+
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    child: Text('Certificate of Excellent Quality and Post Delivery service Support',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  //---achievments, code ends
                   /*Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
@@ -745,7 +827,7 @@ class _HomeState extends State<Home> {
                   SizedBox(height: 40,),
                   //---client list in listView, code starts
                   Padding(
-                    padding: EdgeInsets.fromLTRB(20, 0, 20, 20),
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 0),
                     child: Container(
                       // width: 300,
                       height: 350,
@@ -807,7 +889,89 @@ class _HomeState extends State<Home> {
                       ),
                     ),
                   ),
+                  //---client list, code ends
+                  SizedBox(height: 20,),
+                  //---achievments, code starts
+                  Padding(
+                    padding: EdgeInsets.fromLTRB(20, 0, 20, 30),
+                    child: Container(
+                      width: double.infinity,
+                      // height: 250,
+                      // decoration: BoxDecoration(borderRadius: BorderRadius.all(Radius.circular(20)), color: Colors.white),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(20),
+                        // color: Colors.white,
+                        boxShadow: [
+                          BoxShadow(
+                            color: Color.fromRGBO(217, 215, 215, 1.0),
+                            blurRadius: 15.0,
+                            spreadRadius: 2.0,
+                            offset: Offset(0.0, 0.0),
+                          )
+                        ],),
+                      child: Padding(
+                        padding: EdgeInsets.fromLTRB(8, 15, 8, 15),
+                        child: Column(
+                          crossAxisAlignment: CrossAxisAlignment.start,
+                          mainAxisSize: MainAxisSize.min,
+                          children: [
+                            Center(child: Text('Our Achievment(s)', style: TextStyle(color: Color.fromRGBO(23, 23, 23, 1.0), fontSize: 25, fontWeight: FontWeight.w700))),
+                            SizedBox(height: 10,),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                    child: Text('Client HMB Ispat: ',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                                  ),
+                                ),
 
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    child: Text('Certificate of Excellence in quality and on time delivery',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                                  ),
+                                ),
+                              ],
+                            ),
+                            Row(
+                              crossAxisAlignment: CrossAxisAlignment.start,
+                              children: [
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(10, 0, 0, 0),
+                                    child: Text('Client BNSS: ',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w700)),
+                                  ),
+                                ),
+
+                                Flexible(
+                                  fit: FlexFit.loose,
+                                  child: Padding(
+                                    padding: EdgeInsets.fromLTRB(0, 0, 0, 0),
+                                    child: Text('Certificate of Excellent Quality and Post Delivery service Support',
+                                        style: TextStyle(color: Color.fromRGBO(
+                                            23, 23, 23, 1.0), fontSize: 19, fontWeight: FontWeight.w500)),
+                                  ),
+                                ),
+                              ],
+                            ),
+
+                          ],
+                        ),
+                      ),
+                    ),
+                  ),
+                  //---achievments, code ends
                   /*Column(
                     crossAxisAlignment: CrossAxisAlignment.stretch,
                     children: [
