@@ -25,7 +25,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/a.jpg'),
+                image: AssetImage('images/a.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -36,7 +36,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/b.jpg'),
+                image: AssetImage('images/b.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -47,7 +47,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/c.jpg'),
+                image: AssetImage('images/c.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -58,7 +58,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/d.jpg'),
+                image: AssetImage('images/d.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -69,7 +69,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/e.jpg'),
+                image: AssetImage('images/e.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -80,7 +80,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/f.jpg'),
+                image: AssetImage('images/f.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -91,7 +91,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/g.jpg'),
+                image: AssetImage('images/g.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -102,7 +102,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/h.jpg'),
+                image: AssetImage('images/h.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -113,7 +113,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/i.jpg'),
+                image: AssetImage('images/i.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -123,7 +123,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/j.jpg'),
+                image: AssetImage('images/j.png'),
                 fit: BoxFit.contain,
               ),
             ),
@@ -134,7 +134,7 @@ class _CustomImageCarouselSliderState extends State<CustomImageCarouselSlider> {
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8.0),
               image: DecorationImage(
-                image: AssetImage('images/k.jpg'),
+                image: AssetImage('images/k.png'),
                 fit: BoxFit.contain,
               ),
             ),

@@ -36,47 +36,47 @@ class _CustomImageSliderState extends State<CustomImageSlider> {
       /// Add the sample image file into the images folder
       children: [
         Image.asset(
-          'images/a.jpg',
+          'images/a.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/b.jpg',
+          'images/b.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/c.jpg',
+          'images/c.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/d.jpg',
+          'images/d.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/e.jpg',
+          'images/e.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/f.jpg',
+          'images/f.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/g.jpg',
+          'images/g.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/h.jpg',
+          'images/h.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/i.jpg',
+          'images/i.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/j.jpg',
+          'images/j.png',
           fit: BoxFit.contain,
         ),
         Image.asset(
-          'images/k.jpg',
+          'images/k.png',
           fit: BoxFit.contain,
         ),
       ],
